@@ -87,8 +87,8 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-const char * const BITCOIN_CONF_FILENAME = "monacoin.conf";
-const char * const BITCOIN_PID_FILENAME = "monacoin.pid";
+const char * const BITCOIN_CONF_FILENAME = "dongri.conf";
+const char * const BITCOIN_PID_FILENAME = "dongri.pid";
 
 ArgsManager gArgs;
 bool fPrintToConsole = false;
@@ -506,7 +506,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "monacoin";
+    const char* pszModule = "dongri";
 #endif
     if (pex)
         return strprintf(
@@ -531,7 +531,7 @@ fs::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Monacoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Dongri";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -541,10 +541,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Monacoin";
+    return pathRet / "Library/Application Support/Dongri";
 #else
     // Unix
-    return pathRet / ".monacoin";
+    return pathRet / ".dongri";
 #endif
 #endif
 }
@@ -913,6 +913,9 @@ std::string CopyrightHolders(const std::string& strPrefix)
         strYear = strPrefix;
         strYear.replace(strYear.find("2013"), sizeof("2013")-1, "2014");
         strCopyrightHolders += "\n" + strYear + "The Vertcoin Developers";
+
+        strYear = strPrefix;
+        strCopyrightHolders += "\n" + strYear + "The Monacoin Developers";
     }
     return strCopyrightHolders;
 }

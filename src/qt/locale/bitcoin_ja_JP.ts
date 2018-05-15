@@ -62,12 +62,12 @@
         <translation>アドレス受信</translation>
     </message>
     <message>
-        <source>These are your Monacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>支払送信するためのモナーコインアドレスです。コインを送付する前に、いつも残高と受信アドレスの確認をしてください。</translation>
+        <source>These are your Dongri addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>送信用のどんぐりアドレスです。コインを送付する際は残高と受信アドレスの確認をしてください。</translation>
     </message>
     <message>
-        <source>These are your Monacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>支払の受信をするためのモナーコインアドレスです。それぞれの処理に新規に受信アドレスを使用することを推奨します。</translation>
+        <source>These are your Dongri addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>支払の受信をするためのどんぐりアドレスです。それぞれの処理に新規に受信アドレスを使用することを推奨します。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -117,7 +117,7 @@
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>パスフレーズダイヤログ</translation>
+        <translation>パスフレーズダイアログ</translation>
     </message>
     <message>
         <source>Enter passphrase</source>
@@ -129,31 +129,31 @@
     </message>
     <message>
         <source>Repeat new passphrase</source>
-        <translation>新規パスフレーズの繰り返し</translation>
+        <translation>新規パスフレーズの再入力（確認用）</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>財布に新規パスフレーズの入力をします。&lt;br/&gt;パスフレーズを使ってください &lt;b&gt;10以上のランダム文字列&lt;/b&gt;もしくは &lt;b&gt;8以上の単語&lt;/b&gt;.</translation>
+        <translation>ウォレットに新規パスフレーズの入力をします。&lt;br/&gt;パスフレーズを使ってください &lt;b&gt;10以上のランダム文字列&lt;/b&gt;もしくは &lt;b&gt;8以上の単語&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
-        <translation>財布を暗号化します</translation>
+        <translation>ウォレットを暗号化します</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
-        <translation>この操作は、財布のロックを解除するために財布のパスフレーズが必要です。</translation>
+        <translation>この操作は、ウォレットのロックを解除するためにウォレットのパスフレーズが必要です。</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
-        <translation>財布のロック解除</translation>
+        <translation>ウォレットのロック解除</translation>
     </message>
     <message>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
-        <translation>この操作は、財布を複合化するために財布のパスフレーズが必要です。</translation>
+        <translation>この操作は、ウォレットを複合化するためにウォレットのパスフレーズが必要です。</translation>
     </message>
     <message>
         <source>Decrypt wallet</source>
-        <translation>財布の復号化</translation>
+        <translation>ウォレットの復号化</translation>
     </message>
     <message>
         <source>Change passphrase</source>
@@ -161,39 +161,39 @@
     </message>
     <message>
         <source>Enter the old passphrase and new passphrase to the wallet.</source>
-        <translation>財布に古いパスフレーズと新規パスフレーズを入力します。</translation>
+        <translation>ウォレットに古いパスフレーズと新規パスフレーズを入力します。</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>財布の暗号化を確認します</translation>
+        <translation>ウォレットの暗号化を確認します</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MONACOINS&lt;/b&gt;!</source>
-        <translation>注意: 財布の暗号化やパスフレーズを忘れた場合、 &lt;b&gt;あなたのモナーコインはすべて失われます。&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DONGRICOINS&lt;/b&gt;!</source>
+        <translation>注意: ウォレットの暗号化やパスフレーズを忘れた場合、 &lt;b&gt;あなたのどんぐりはすべて失われます。&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>財布を暗号化してもよろしいですか？</translation>
+        <translation>ウォレットを暗号化してもよろしいですか？</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
-        <translation>暗号化された財布</translation>
+        <translation>暗号化されたウォレット</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your monacoins from being stolen by malware infecting your computer.</source>
-        <translation>暗号化処理を終了させるために、すぐに%1を閉じるでしょう。あなたのコンピュータに感染したマルウェアによって、盗まれたモナーコインは暗号化をしていても完全に守ることができないことを覚えておいてください。</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dongris from being stolen by malware infecting your computer.</source>
+        <translation>暗号化処理を終了させるために、すぐに%1を閉じるでしょう。あなたのコンピュータに感染したマルウェアによって、盗まれたどんぐりは暗号化をしていても完全に守ることができないことを覚えておいてください。</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>重要: 以前の財布ファイルのバックアップは、新しく作成された暗号化された財布ファイルに置き換えられるべきです。セキュリティの観点から、暗号化されていない以前の財布ファイルは、新しく暗号化された財布が利用開始になり次第、間もなく使用できなくなります。</translation>
+        <translation>重要: 以前のウォレットファイルのバックアップは、新しく作成された暗号化されたウォレットファイルに置き換えられるべきです。セキュリティの観点から、暗号化されていない以前のウォレットファイルは、新しく暗号化されたウォレットが利用開始になり次第、間もなく使用できなくなります。</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation>財布の暗号化に失敗しました。</translation>
+        <translation>ウォレットの暗号化に失敗しました。</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>内部エラーにより財布の暗号化に失敗しました。財布は暗号化されていません。</translation>
+        <translation>内部エラーによりウォレットの暗号化に失敗しました。ウォレットは暗号化されていません。</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
@@ -201,19 +201,19 @@
     </message>
     <message>
         <source>Wallet unlock failed</source>
-        <translation>財布のロック解除に失敗しました。</translation>
+        <translation>ウォレットのロック解除に失敗しました。</translation>
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>財布の復号化のために入力されたパスフレーズが間違っています。</translation>
+        <translation>ウォレットの復号化のために入力されたパスフレーズが間違っています。</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
-        <translation>財布の復号化に失敗しました。</translation>
+        <translation>ウォレットの復号化に失敗しました。</translation>
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>財布パスフレーズの変更に成功しました。</translation>
+        <translation>ウォレットパスフレーズの変更に成功しました。</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -251,7 +251,7 @@
     </message>
     <message>
         <source>Show general overview of wallet</source>
-        <translation>財布の一般概要を表示</translation>
+        <translation>ウォレットの概要を表示</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -295,11 +295,11 @@
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;財布の暗号化...</translation>
+        <translation>&amp;ウォレットの暗号化...</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet...</source>
-        <translation>&amp;財布のバックアップ...</translation>
+        <translation>&amp;ウォレットのバックアップ...</translation>
     </message>
     <message>
         <source>&amp;Change Passphrase...</source>
@@ -338,16 +338,16 @@
         <translation>ディスクのブロックの再インデックス中...</translation>
     </message>
     <message>
-        <source>Send coins to a Monacoin address</source>
-        <translation>モナーコインアドレスにコインを送信</translation>
+        <source>Send coins to a Dongri address</source>
+        <translation>どんぐりアドレスにコインを送信</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
-        <translation>他の場所に財布をバックアップ</translation>
+        <translation>他の場所にウォレットをバックアップ</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>財布の暗号化に使用するパスフレーズを変更</translation>
+        <translation>ウォレットの暗号化に使用するパスフレーズを変更</translation>
     </message>
     <message>
         <source>&amp;Debug window</source>
@@ -362,12 +362,12 @@
         <translation>&amp;メッセージの確認...</translation>
     </message>
     <message>
-        <source>Monacoin</source>
-        <translation>モナーコイン</translation>
+        <source>Dongri</source>
+        <translation>どんぐり</translation>
     </message>
     <message>
         <source>Wallet</source>
-        <translation>財布</translation>
+        <translation>ウォレット</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -387,15 +387,15 @@
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>財布に属するプライベートキーの暗号化</translation>
+        <translation>ウォレットに属するプライベートキーの暗号化</translation>
     </message>
     <message>
-        <source>Sign messages with your Monacoin addresses to prove you own them</source>
-        <translation>所有者であることを証明するためにモナーコインアドレスのメッセージにサイン</translation>
+        <source>Sign messages with your Dongri addresses to prove you own them</source>
+        <translation>所有者であることを証明するためにどんぐりアドレスのメッセージにサイン</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Monacoin addresses</source>
-        <translation>署名された特定のモナーコインアドレスを確認するために、メッセージを確認</translation>
+        <source>Verify messages to ensure they were signed with specified Dongri addresses</source>
+        <translation>署名された特定のどんぐりアドレスを確認するために、メッセージを確認</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -414,8 +414,8 @@
         <translation>ツールバータブ</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and monacoin: URIs)</source>
-        <translation>支払の要求 (QRコードとモナーコインのURIを作成)</translation>
+        <source>Request payments (generates QR codes and dongri: URIs)</source>
+        <translation>支払の要求 (QRコードとどんぐりのURIを作成)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,8 +426,8 @@
         <translation>受信に使用したアドレスとラベルの一覧を表示</translation>
     </message>
     <message>
-        <source>Open a monacoin: URI or payment request</source>
-        <translation>モナーコインのURIまたは支払要求を開く</translation>
+        <source>Open a dongri: URI or payment request</source>
+        <translation>どんぐりのURIまたは支払要求を開く</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -470,8 +470,8 @@
         <translation>更新日</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Monacoin command-line options</source>
-        <translation>モナーコインのコマンドラインオプションとして可能なリストの取得の%1ヘルプメッセージを表示</translation>
+        <source>Show the %1 help message to get a list with possible Dongri command-line options</source>
+        <translation>どんぐりのコマンドラインオプションとして可能なリストの取得の%1ヘルプメッセージを表示</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -533,15 +533,15 @@
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>財布は&lt;b&gt;暗号化された&lt;/b&gt; そして現在 &lt;b&gt;ロック解除されています&lt;/b&gt;</translation>
+        <translation>ウォレットは&lt;b&gt;暗号化された&lt;/b&gt; そして現在 &lt;b&gt;ロック解除されています&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>財布は &lt;b&gt;暗号化され&lt;/b&gt; そして現在 &lt;b&gt;ロックされています&lt;/b&gt;</translation>
+        <translation>ウォレットは &lt;b&gt;暗号化され&lt;/b&gt; そして現在 &lt;b&gt;ロックされています&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Monacoin can no longer continue safely and will quit.</source>
-        <translation>致命的なエラーが発生しました。モナーコインは安全に終了することができません。</translation>
+        <source>A fatal error occurred. Dongri can no longer continue safely and will quit.</source>
+        <translation>致命的なエラーが発生しました。どんぐりは安全に終了することができません。</translation>
     </message>
 </context>
 <context>
@@ -734,8 +734,8 @@
         <translation>送信アドレスの編集</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Monacoin address.</source>
-        <translation>入寮されたアドレス "%1" は正当なモナーコインアドレスではありません。</translation>
+        <source>The entered address "%1" is not a valid Dongri address.</source>
+        <translation>入寮されたアドレス "%1" は正当などんぐりアドレスではありません。</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -743,7 +743,7 @@
     </message>
     <message>
         <source>Could not unlock wallet.</source>
-        <translation>財布をロック解除できませんでした。</translation>
+        <translation>ウォレットをロック解除できませんでした。</translation>
     </message>
     <message>
         <source>New key generation failed.</source>
@@ -754,7 +754,7 @@
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
-        <translation>新しい日付の辞書が作成されるでしょう。</translation>
+        <translation>上記の場所に新しいディレクトリが作成されます。</translation>
     </message>
     <message>
         <source>name</source>
@@ -762,15 +762,15 @@
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>辞書はすでに存在しています。新しい辞書を作成する場合は、%1を追加してください。</translation>
+        <translation>ディレクトリはすでに存在しています。新しいディレクトリを作成する場合は %1 を追加してください。</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
-        <translation>パスはすでに存在しており、辞書ではありません。</translation>
+        <translation>パスにはすでにファイルが存在しています。</translation>
     </message>
     <message>
         <source>Cannot create data directory here.</source>
-        <translation>ここに日付辞書を作成することはできません。</translation>
+        <translation>ここにディレクトリを作成することはできません。</translation>
     </message>
 </context>
 <context>
@@ -805,7 +805,7 @@
     </message>
     <message>
         <source>Choose data directory on startup (default: %u)</source>
-        <translation>起動の日付辞書の選択 (デフォルト: %u)</translation>
+        <translation>データ保存ディレクトリの選択 (デフォルト: %u)</translation>
     </message>
     <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
@@ -836,23 +836,23 @@
     </message>
     <message>
         <source>Welcome to %1.</source>
-        <translation>ようこそ  %1.</translation>
+        <translation>ようこそ %1 ウォレットへ.</translation>
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where %1 will store its data.</source>
-        <translation>プログラムの初回起動時なので、データの保存場所 %1を選択してください。</translation>
+        <translation>プログラムの初期設定を行います。%1データの保存場所を選択してください。</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
-        <translation>デフォルトデータ辞書を使用</translation>
+        <translation>デフォルトの保存場所を使用</translation>
     </message>
     <message>
         <source>Use a custom data directory:</source>
-        <translation>カスタムデータ辞書を使用</translation>
+        <translation>保存場所を変更する</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
-        <translation>エラー: 特定の辞書%1の作成に失敗しました。</translation>
+        <translation>エラー: 指定のディレクトリ%1の作成に失敗しました。</translation>
     </message>
     <message>
         <source>Error</source>
@@ -866,12 +866,12 @@
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the monacoin network, as detailed below.</source>
-        <translation>最近のトランザクションが表示できない可能性があります。従って、ウォレットの残高が正しくない可能性があります。この情報はモナーコインネットワークに接続し、同期処理を完了させると正しくなります。詳細は以下になります。</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the dongri network, as detailed below.</source>
+        <translation>ブロックチェインを更新しています。更新が完了するまで表示トランザクションは最新でない可能性があり、ウォレットの残高は正しくない可能性があります。</translation>
     </message>
     <message>
-        <source>Attempting to spend monacoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>使用したモナーコインで、未処理となっているものは、ネットワークによって受領されません。</translation>
+        <source>Attempting to spend dongris that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>未処理となっているどんぐりを使用したとしてもネットワークには受領されません。</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1013,7 +1013,7 @@
     </message>
     <message>
         <source>Expert</source>
-        <translation>専門家</translation>
+        <translation>高度な設定</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1028,16 +1028,16 @@
         <translation>&amp;認証されていない変更の支払い</translation>
     </message>
     <message>
-        <source>Automatically open the Monacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自動絵的にルータのモナーコインのクライアントポートが開きます。この機能はルータがUPnPをサポートし、有効であるときに動作します。</translation>
+        <source>Automatically open the Dongri client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自動絵的にルータのどんぐりのクライアントポートが開きます。この機能はルータがUPnPをサポートし、有効であるときに動作します。</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>&amp;UPnPを使用してポート配置します。</translation>
     </message>
     <message>
-        <source>Connect to the Monacoin network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5プロキシを使用してモナーコインネットワークへ接続</translation>
+        <source>Connect to the Dongri network through a SOCKS5 proxy.</source>
+        <translation>SOCKS5プロキシを使用してどんぐりネットワークへ接続</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1072,8 +1072,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Monacoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Tor秘匿ネットワークのための区切られたSOCKS5を経由して、モナーコインネットワークに接続</translation>
+        <source>Connect to the Dongri network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Tor秘匿ネットワークのための区切られたSOCKS5を経由して、どんぐりネットワークに接続</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1149,7 +1149,7 @@
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
-        <translation>変更を有効にするため、クライアントの再起動が必要です。</translation>
+        <translation>変更を有効にするにはクライアントの再起動が必要です。</translation>
     </message>
     <message>
         <source>Client will be shut down. Do you want to proceed?</source>
@@ -1157,11 +1157,11 @@
     </message>
     <message>
         <source>This change would require a client restart.</source>
-        <translation>変更は、クライアントの再起動が必要になる場合があります。</translation>
+        <translation>変更はクライアントの再起動が必要になる場合があります。</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>提供されたプロキシアドレスは無効です。</translation>
+        <translation>入力されたプロキシアドレスは無効です。</translation>
     </message>
 </context>
 <context>
@@ -1171,8 +1171,8 @@
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Monacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>表示されている情報は、期限切れの可能性があります。ウォレットは自動的にモナーコインネットワークへの接続が確立した後に同期化されます。しかし、処理はまだ、完了していません。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dongri network after a connection is established, but this process has not completed yet.</source>
+        <translation>表示されている情報は期限切れの可能性があります。ウォレットは自動的にどんぐりネットワークへの接続が確立した後に同期化されます。しかし、処理はまだ、完了していません。</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1192,7 +1192,7 @@
     </message>
     <message>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>全てのトランザクションはまだ、確認されておらず、支払い可能な残高も数えられていません。</translation>
+        <translation>全てのトランザクションはまだ確認されておらず、支払い可能な残高はありません。</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1246,8 +1246,8 @@
         <translation>支払い要求エラー</translation>
     </message>
     <message>
-        <source>Cannot start monacoin: click-to-pay handler</source>
-        <translation>モナーコインを開始できません: click-to-pay handler</translation>
+        <source>Cannot start dongri: click-to-pay handler</source>
+        <translation>どんぐりを開始できません: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1262,8 +1262,8 @@
         <translation>無効な支払アドレス %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Monacoin address or malformed URI parameters.</source>
-        <translation>URLはパースできませんでした! 原因はモナーコインアドレスが無効であるか、URIパラメータの形式が間違っている可能性があります。</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Dongri address or malformed URI parameters.</source>
+        <translation>URLはパースできませんでした! 原因はどんぐりアドレスが無効であるか、URIパラメータの形式が間違っている可能性があります。</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1356,8 +1356,8 @@
         <translation>残高</translation>
     </message>
     <message>
-        <source>Enter a Monacoin address (e.g. %1)</source>
-        <translation>モナーコインアドレスの入力 (例 %1)</translation>
+        <source>Enter a Dongri address (e.g. %1)</source>
+        <translation>どんぐりアドレスの入力 (例 %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1610,7 +1610,7 @@
     </message>
     <message>
         <source>&amp;Network Traffic</source>
-        <translation>&amp;ネットワークトラヒック</translation>
+        <translation>&amp;ネットワークトラフィック</translation>
     </message>
     <message>
         <source>Totals</source>
@@ -1733,7 +1733,7 @@
     </message>
     <message>
         <source>&amp;Message:</source>
-        <translation>&amp;メッセージ:</translation>
+        <translation>&amp;メモ:</translation>
     </message>
     <message>
         <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
@@ -1741,23 +1741,23 @@
     </message>
     <message>
         <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>&amp;再度存在している受信アドレスを死闘する(非推奨)</translation>
+        <translation>&amp;既に発行した受信アドレスを再利用する（非推奨）。選択用ウインドが開きます。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Monacoin network.</source>
-        <translation>支払要求に添付されたオプションメッセージは、要求を開いたときに表示されます。メモ: メッセージは、モナーコインネットワーク上で支払と一緒に送信されません。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dongri network.</source>
+        <translation>この欄はメモとして利用できます。</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
-        <translation>新規受信アドレスと関連するオプションラベル</translation>
+        <translation>受信アドレスと表示用ラベル</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>支払要求のための形式を使用してください。すべてのフィールドは&lt;b&gt;おプション&lt;/b&gt; です。</translation>
+        <translation>ここで受取用アドレスを生成できます。すべて未入力でも生成できます。</translation>
     </message>
     <message>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>要求のためのオプション残高。特定の金額の要求をしないときは空か0を入力します。</translation>
+        <translation>受取金額。空欄か0が可能です。事前に額の取り決めをしている場合入力しておくと便利です。</translation>
     </message>
     <message>
         <source>Clear all fields of the form.</source>
@@ -1950,7 +1950,7 @@
     </message>
     <message>
         <source>Transaction Fee:</source>
-        <translation>処理費用:</translation>
+        <translation>送信手数料:</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1973,12 +1973,12 @@
         <translation>隠す</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for monacoin transactions than the network can process.</source>
-        <translation>最小の料金のみ支払いは、ブロック内の処理容量よりも小さい場合に限り、問題ありません。しかし、ネットワークの処理できる量よりも、モナーコイン処理のほうが需要があり、最終的にその確認処理が実行されないことに注意する必要があります。</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for dongri transactions than the network can process.</source>
+        <translation>最低手数料での送信はブロックチェインネットワークが空いていれば処理されます。処理負荷が高い場合、いつまでたってもあなたの送信が処理されない状況が起こりえます。その場合最終的には送信は失敗します。</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
-        <translation>(ツールチップを読む)</translation>
+        <translation>（詳細はツールチップにて）</translation>
     </message>
     <message>
         <source>Recommended:</source>
@@ -2058,7 +2058,7 @@
     </message>
     <message>
         <source>%1 to %2</source>
-        <translation>%2から%1</translation>
+        <translation>%2 へ %1</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2066,11 +2066,11 @@
     </message>
     <message>
         <source>added as transaction fee</source>
-        <translation>処理料金として追加済み</translation>
+        <translation>が送信手数料です</translation>
     </message>
     <message>
         <source>Total Amount %1</source>
-        <translation>合計残高: %1</translation>
+        <translation>合計金額: %1</translation>
     </message>
     <message>
         <source>or</source>
@@ -2110,7 +2110,7 @@
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
-        <translation>料金が%1より高い場合、非常識に高い料金として考えられます。</translation>
+        <translation>%1以上の手数料は法外に高い料金と言えるでしょう。</translation>
     </message>
     <message>
         <source>Payment request expired.</source>
@@ -2118,11 +2118,11 @@
     </message>
     <message>
         <source>Pay only the required fee of %1</source>
-        <translation>%1の必須料金のみ支払う</translation>
+        <translation>%1の最低手数料で送信する</translation>
     </message>
     <message>
-        <source>Warning: Invalid Monacoin address</source>
-        <translation>注意: 無効なモナーコインアドレス</translation>
+        <source>Warning: Invalid Dongri address</source>
+        <translation>注意: 無効などんぐりアドレス</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2145,7 +2145,7 @@
     <name>SendCoinsEntry</name>
     <message>
         <source>A&amp;mount:</source>
-        <translation>&amp;残高:</translation>
+        <translation>&amp;送信金額:</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -2157,15 +2157,15 @@
     </message>
     <message>
         <source>Choose previously used address</source>
-        <translation>前回使用したアドレスの選択</translation>
+        <translation>以前使用したアドレスを選択</translation>
     </message>
     <message>
         <source>This is a normal payment.</source>
         <translation>これは通常の支払です。</translation>
     </message>
     <message>
-        <source>The Monacoin address to send the payment to</source>
-        <translation>支払に送信するモナーコインアドレス</translation>
+        <source>The Dongri address to send the payment to</source>
+        <translation>支払に送信するどんぐりアドレス</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2173,7 +2173,7 @@
     </message>
     <message>
         <source>Paste address from clipboard</source>
-        <translation>クリップボードからアドレスを貼り付ける</translation>
+        <translation>クリップボードのアドレスを貼り付ける</translation>
     </message>
     <message>
         <source>Alt+P</source>
@@ -2184,16 +2184,16 @@
         <translation>入力の削除</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less monacoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less dongris than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>料金は送信料金から控除されます。受信者は入力された料金よりも低い金額を受け取ります。複数の受信者を選択した場合、この料金は同額に分けられます。</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
-        <translation>&amp;残高から料金を差し引く</translation>
+        <translation>&amp;送信手数料込み</translation>
     </message>
     <message>
         <source>Message:</source>
-        <translation>メッセージ:</translation>
+        <translation>メモ:</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -2208,8 +2208,8 @@
         <translation>使用されたアドレス一覧のために、このアドレスのラベルを入力します。</translation>
     </message>
     <message>
-        <source>A message that was attached to the monacoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Monacoin network.</source>
-        <translation>参考資料に保存された処理のモナーコインURIは、メッセージに添付されます。メモ: このメッセージはモナーコイン上で送信されません。</translation>
+        <source>A message that was attached to the dongri: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dongri network.</source>
+        <translation>この欄はメモとして利用できます。このメモは相手には送信されません。</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2221,7 +2221,7 @@
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
-        <translation>アドレス帳にアドレスを追加すためのラベルの入力</translation>
+        <translation>アドレス帳に追加された時にわかりやすい名前を入れておきましょう</translation>
     </message>
 </context>
 <context>
@@ -2253,12 +2253,12 @@
         <translation>&amp;署名メッセージ</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive monacoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>送信されたモナーコインを受信できることを証明するために、アドレスのメッセージや同意事項に署名できます。フィッシング攻撃が署名を利用する可能性があるので、署名が曖昧やランダムでないことに注意してください。詳細な明細のみに署名されます。</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive dongris sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>送信されたどんぐりを受信できることを証明するために、アドレスのメッセージや同意事項に署名できます。フィッシング攻撃が署名を利用する可能性があるので、署名が曖昧やランダムでないことに注意してください。詳細な明細のみに署名されます。</translation>
     </message>
     <message>
-        <source>The Monacoin address to sign the message with</source>
-        <translation>メッセージ署名するためのモナーコインアドレス</translation>
+        <source>The Dongri address to sign the message with</source>
+        <translation>メッセージ署名するためのどんぐりアドレス</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2289,8 +2289,8 @@
         <translation>システムのクリップボードへ現在の署名をコピー</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Monacoin address</source>
-        <translation>モナーコインアドレスを証明するために、メッセージに署名</translation>
+        <source>Sign the message to prove you own this Dongri address</source>
+        <translation>どんぐりアドレスを証明するために、メッセージに署名</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2313,12 +2313,12 @@
         <translation>以下のメッセージを確認して、受信者のアドレス、メッセージ（タブやすスペースなどを正確にこぴーしてください）、署名を入力してください。中間の攻撃者からのアタックを避けるために、署名されていないメッセージを読まないように注意してください。署名はアドレスと受信を証明することはできますが、送信者の処理を証明できないことに注意してください。</translation>
     </message>
     <message>
-        <source>The Monacoin address the message was signed with</source>
-        <translation>メッセージのモナーコインアドレスはサインされています</translation>
+        <source>The Dongri address the message was signed with</source>
+        <translation>メッセージのどんぐりアドレスはサインされています</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Monacoin address</source>
-        <translation>特定のモナーコインアドレスと署名されているメッセージであることを確認してください。</translation>
+        <source>Verify the message to ensure it was signed with the specified Dongri address</source>
+        <translation>特定のどんぐりアドレスと署名されているメッセージであることを確認してください。</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2479,7 +2479,7 @@
     </message>
     <message>
         <source>Credit</source>
-        <translation>信用</translation>
+        <translation>クレジット</translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -2499,7 +2499,7 @@
     </message>
     <message>
         <source>Transaction fee</source>
-        <translation>処理料金</translation>
+        <translation>手数料</translation>
     </message>
     <message>
         <source>Net amount</source>
@@ -2515,11 +2515,11 @@
     </message>
     <message>
         <source>Transaction ID</source>
-        <translation>処理ID</translation>
+        <translation>トランザクションID</translation>
     </message>
     <message>
         <source>Transaction total size</source>
-        <translation>処理合計サイズ</translation>
+        <translation>トランザクション合計サイズ</translation>
     </message>
     <message>
         <source>Output index</source>
