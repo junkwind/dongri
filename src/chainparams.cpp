@@ -195,7 +195,7 @@ public:
         consensus.BIP66Height = -1;
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 1.1 * 24 * 60 * 60; // 1.1 days
-        consensus.nPowTargetSpacing = 1.5 * 60; // 1.5 minutes
+        consensus.nPowTargetSpacing = 0.5 * 60; // 0.5 minutes
         consensus.nPowTargetTimespanDigisheld = 1.5 * 60;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
@@ -215,29 +215,29 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1488931200; // March 1, 2017
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1520467200; // March 8, 2018
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000001b57ceb7b646");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");
 
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x9b4de3d23148a6a7d25a991b4353b98ab0585813575ddfcf68354eef7eee1380"); //160675
 
-        pchMessageStart[0] = 0xfd;
-        pchMessageStart[1] = 0xd2;
-        pchMessageStart[2] = 0xc8;
-        pchMessageStart[3] = 0xf1;
+        pchMessageStart[0] = 0x13;
+        pchMessageStart[1] = 0x4f;
+        pchMessageStart[2] = 0x07;
+        pchMessageStart[3] = 0x16;
 
         // Hardfork params
-        nSwitchKGWblock = 10;
-        nSwitchDIGIblock = 20;
-        nSwitchLyra2REv2_DGW = 30;
+        nSwitchKGWblock = 0;
+        nSwitchDIGIblock = 0;
+        nSwitchLyra2REv2_DGW = 0;
 
-        nDefaultPort = 19403;
-        nPruneAfterHeight = 1000;
+        nDefaultPort = 19402;
+        nPruneAfterHeight = 0;
         vAlertPubKey = ParseHex("04887665070e79d20f722857e58ec8f402733f710135521a0b63441419bf5665ba4623bed13fca0cb2338682ab2a54ad13ce07fbc81c3c2f0912a4eb8521dd3cfb");
 
-        genesis = CreateGenesisBlock(1388479472, 534404, 0x1e0ffff0, 1, 500 * COIN);
-        consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x039bcb0e9c9540be6dc0e62b9eb6dfa838293a78d16f097b86415e4a932e90ec"));
-        assert(genesis.hashMerkleRoot == uint256S("0x4252922eb53ad8e1f482a49921853cebf5267df37639e644ea88deea06258992"));
+        genesis = CreateGenesisBlock(1488924140, 2559236, 0x1e0ffff0, 1, 500 * COIN);
+		consensus.hashGenesisBlock = genesis.GetHash();
+		assert(consensus.hashGenesisBlock == uint256S("0x4266cec485430edefb5260465358b44b023fdf5717a523ba07615e4da9f1d80b"));
+		assert(genesis.hashMerkleRoot == uint256S("0x4252922eb53ad8e1f482a49921853cebf5267df37639e644ea88deea06258992"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -261,7 +261,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {0, uint256S("0xa2b106ceba3be0c6d097b2a6a6aacf9d638ba8258ae478158f449c321061e0b2")},
+//                {0, uint256S("0xa2b106ceba3be0c6d097b2a6a6aacf9d638ba8258ae478158f449c321061e0b2")},
             }
         };
 
