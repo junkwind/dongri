@@ -66,11 +66,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += monacoind
+  bin_PROGRAMS += dongrid
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += monacoin-cli monacoin-tx
+  bin_PROGRAMS += dongri-cli dongri-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -393,16 +393,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-monacoind_SOURCES = bitcoind.cpp
-monacoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-monacoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-monacoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+dongrid_SOURCES = bitcoind.cpp
+dongrid_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+dongrid_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+dongrid_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-monacoind_SOURCES += bitcoind-res.rc
+dongrid_SOURCES += bitcoind-res.rc
 endif
 
-monacoind_LDADD = \
+dongrid_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -416,38 +416,38 @@ monacoind_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-monacoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+dongrid_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-monacoin_cli_SOURCES = bitcoin-cli.cpp
-monacoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-monacoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-monacoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+dongri_cli_SOURCES = bitcoin-cli.cpp
+dongri_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+dongri_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+dongri_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-monacoin_cli_SOURCES += bitcoin-cli-res.rc
+dongri_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-monacoin_cli_LDADD = \
+dongri_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-monacoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+dongri_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-monacoin_tx_SOURCES = bitcoin-tx.cpp
-monacoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-monacoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-monacoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+dongri_tx_SOURCES = bitcoin-tx.cpp
+dongri_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+dongri_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+dongri_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-monacoin_tx_SOURCES += bitcoin-tx-res.rc
+dongri_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-monacoin_tx_LDADD = \
+dongri_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -455,7 +455,7 @@ monacoin_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-monacoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+dongri_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

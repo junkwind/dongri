@@ -1,13 +1,13 @@
 *.tar.gz
 
 *.exe
-src/monacoin
-src/monacoind
-src/monacoin-cli
-src/monacoin-tx
-src/test/test_monacoin
-src/test/test_monacoin_fuzzy
-src/qt/test/test_monacoin-qt
+src/dongri
+src/dongrid
+src/dongri-cli
+src/dongri-tx
+src/test/test_dongri
+src/test/test_dongri_fuzzy
+src/qt/test/test_dongri-qt
 
 # autoreconf
 Makefile.in
@@ -74,12 +74,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-monacoin-qt
-Monacoin-Qt.app
+dongri-qt
+Dongri-Qt.app
 
 # Unit-tests
 Makefile.test
-monacoin-qt_test
+dongri-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -92,7 +92,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_monacoin.coverage/
+test_dongri.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -109,3 +109,18 @@ test/cache/*
 
 libbitcoinconsensus.pc
 contrib/devtools/split-debug.sh
+
+.cproject
+.project
+
+Dongri-QT.config
+Dongri-QT.creator
+Dongri-QT.files
+Dongri-QT.includes
+Dongri-QT.creator.user
+
+background.tiff
+background.tiff.png
+background.tiff@2x.png
+
+

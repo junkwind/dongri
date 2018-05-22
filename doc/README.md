@@ -1,41 +1,41 @@
-Monacoin Core
+Dongri Core
 =============
 
 Setup
 ---------------------
-Monacoin Core is the original Monacoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Monacoin transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Dongri Core is the original Dongri client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Dongri transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Monacoin Core, visit [monacoin.org](https://monacoin.org).
+To download Dongri Core, visit [dongri.example.com](https://dongri.example.com).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Monacoin on your native platform.
+The following are some helpful notes on how to run Dongri on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/monacoin-qt` (GUI) or
-- `bin/monacoind` (headless)
+- `bin/dongri-qt` (GUI) or
+- `bin/dongrid` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run monacoin-qt.exe.
+Unpack the files into a directory, and then run dongri-qt.exe.
 
 ### OS X
 
-Drag Monacoin-Core to your applications folder, and then run Monacoin-Core.
+Drag Dongri-Core to your applications folder, and then run Dongri-Core.
 
 ### Need Help?
 
-* See the documentation at the [Monacoin Wiki](https://monacoin.info/)
+* See the documentation at the [Dongri Wiki](https://dongri.info/)
 for help and more information.
-* Ask for help on [#monacoin](http://webchat.freenode.net?channels=monacoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=monacoin).
-* Ask for help on the [MonacoinTalk](https://monacointalk.io/) forums.
+* Ask for help on [#dongri](http://webchat.freenode.net?channels=dongri) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=dongri).
+* Ask for help on the [DongriTalk](https://dongritalk.io/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build Monacoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Dongri on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -45,12 +45,12 @@ The following are developer notes on how to build Monacoin on your native platfo
 
 Development
 ---------------------
-The Monacoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Dongri repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/monacoin/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/dongri/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -61,8 +61,8 @@ The Monacoin repo's [root README](/README.md) contains relevant information on t
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [MonacoinTalk](https://monacointalk.io/) forums.
-* Discuss general Monacoin development on #monacoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=monacoin-dev).
+* Discuss on the [DongriTalk](https://dongritalk.io/) forums.
+* Discuss general Dongri development on #dongri-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=dongri-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

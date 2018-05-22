@@ -38,8 +38,8 @@
         <translation>Билдирүүнү &amp;текшерүү...</translation>
     </message>
     <message>
-        <source>Monacoin</source>
-        <translation>Monacoin</translation>
+        <source>Dongri</source>
+        <translation>Dongri</translation>
     </message>
     <message>
         <source>Wallet</source>

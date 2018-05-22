@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/monacoinproject/monacoin
+url=https://github.com/dongriproject/dongri
 proc=2
 mem=2000
 lxc=true
@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the monacoin, gitian-builder, gitian.sigs.ltc, and monacoin-detached-sigs.
+Run this script from the directory containing the dongri, gitian-builder, gitian.sigs.ltc, and dongri-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/monacoinproject/monacoin
+-u|--url	Specify the URL of the repository. Default is https://github.com/dongriproject/dongri
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -232,8 +232,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/monacoinproject/gitian.sigs.ltc.git
-    git clone https://github.com/monacoinproject/monacoin-detached-sigs.git
+    git clone https://github.com/dongriproject/gitian.sigs.ltc.git
+    git clone https://github.com/dongriproject/dongri-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -247,7 +247,7 @@ then
 fi
 
 # Set up build
-pushd ./monacoin
+pushd ./dongri
 git fetch
 git checkout ${COMMIT}
 popd
@@ -256,7 +256,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./monacoin-binaries/${VERSION}
+	mkdir -p ./dongri-binaries/${VERSION}
 	
 	# Build Dependencies
 	echo ""
@@ -266,7 +266,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../monacoin/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../dongri/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -274,9 +274,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit monacoin=${COMMIT} --url monacoin=${url} ../monacoin/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../monacoin/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/monacoin-*.tar.gz build/out/src/monacoin-*.tar.gz ../monacoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit dongri=${COMMIT} --url dongri=${url} ../dongri/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../dongri/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/dongri-*.tar.gz build/out/src/dongri-*.tar.gz ../dongri-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -284,10 +284,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit monacoin=${COMMIT} --url monacoin=${url} ../monacoin/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../monacoin/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/monacoin-*-win-unsigned.tar.gz inputs/monacoin-win-unsigned.tar.gz
-	    mv build/out/monacoin-*.zip build/out/monacoin-*.exe ../monacoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit dongri=${COMMIT} --url dongri=${url} ../dongri/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../dongri/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/dongri-*-win-unsigned.tar.gz inputs/dongri-win-unsigned.tar.gz
+	    mv build/out/dongri-*.zip build/out/dongri-*.exe ../dongri-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -295,10 +295,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit monacoin=${COMMIT} --url monacoin=${url} ../monacoin/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../monacoin/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/monacoin-*-osx-unsigned.tar.gz inputs/monacoin-osx-unsigned.tar.gz
-	    mv build/out/monacoin-*.tar.gz build/out/monacoin-*.dmg ../monacoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit dongri=${COMMIT} --url dongri=${url} ../dongri/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../dongri/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/dongri-*-osx-unsigned.tar.gz inputs/dongri-osx-unsigned.tar.gz
+	    mv build/out/dongri-*.tar.gz build/out/dongri-*.dmg ../dongri-binaries/${VERSION}
 	fi
 	popd
 
@@ -325,27 +325,27 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../monacoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../dongri/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../monacoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../dongri/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX	
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""	
-	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../monacoin/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../dongri/contrib/gitian-descriptors/gitian-osx.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../monacoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../dongri/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../monacoin/contrib/gitian-descriptors/gitian-osx-signer.yml	
+	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../dongri/contrib/gitian-descriptors/gitian-osx-signer.yml	
 	popd
 fi
 
@@ -360,10 +360,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../monacoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../monacoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/monacoin-*win64-setup.exe ../monacoin-binaries/${VERSION}
-	    mv build/out/monacoin-*win32-setup.exe ../monacoin-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../dongri/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../dongri/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/dongri-*win64-setup.exe ../dongri-binaries/${VERSION}
+	    mv build/out/dongri-*win32-setup.exe ../dongri-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -371,9 +371,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../monacoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../monacoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/monacoin-osx-signed.dmg ../monacoin-binaries/${VERSION}/monacoin-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../dongri/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../dongri/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/dongri-osx-signed.dmg ../dongri-binaries/${VERSION}/dongri-${VERSION}-osx.dmg
 	fi
 	popd
 

@@ -1,42 +1,42 @@
-Monacoin Core integration/staging tree
+Dongri Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/monacoinproject/monacoin.svg?branch=master)](https://travis-ci.org/monacoinproject/monacoin)
+[![Build Status](https://travis-ci.org/dongriproject/dongri.svg?branch=master)](https://travis-ci.org/dongriproject/dongri)
 
-https://monacoin.org
+https://dongriproject.com
 
-What is Monacoin?
+What is Dongri?
 ----------------
 
-Monacoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. Monacoin uses peer-to-peer technology to operate
+Dongri is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. Dongri uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Monacoin Core is the name of open source
+out collectively by the network. Dongri Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Monacoin Core software, see [https://monacoin.org](https://monacoin.org).
+the Dongri Core software, see [https://dongriproject.com](https://dongriproject.com).
 
 License
 -------
 
-Monacoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Dongri Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/monacoinproject/monacoin/tags) are created
-regularly to indicate new official, stable release versions of Monacoin Core.
+completely stable. [Tags](https://github.com/dongriproject/dongri/tags) are created
+regularly to indicate new official, stable release versions of Dongri Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-The developer [mailing list](https://groups.google.com/forum/#!forum/monacoin-dev)
+The developer [mailing list](https://groups.google.com/forum/#!forum/dongri-dev)
 should be used to discuss complicated or controversial changes before working
 on a patch set.
 
-Developer IRC can be found on Freenode at #monacoin-dev.
+Developer IRC can be found on Freenode at #dongri-dev.
 
 Testing
 -------
@@ -70,7 +70,7 @@ Translations
 ------------
 
 We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to Monacoin periodically.
+Translations are converted to Dongri periodically.
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.
