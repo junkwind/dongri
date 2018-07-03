@@ -121,7 +121,7 @@ public:
         pchMessageStart[1] = 0x4f;
         pchMessageStart[2] = 0x07;
         pchMessageStart[3] = 0x18;
-        nDefaultPort = 9402;
+        nDefaultPort = 9533;
         nPruneAfterHeight = 0;
         vAlertPubKey = ParseHex("04fc55d919cdea21e8171fea24c3cf23864ff64a53404829ad50af86e1be1b8217115701b348d50c6aaba6983bc148d3c9e6fa8c11365889774fc1db6da6840c06");
 
@@ -219,7 +219,7 @@ public:
         nSwitchDIGIblock = 0;
         nSwitchLyra2REv2_DGW = 0;
 
-        nDefaultPort = 19402;
+        nDefaultPort = 19533;
         nPruneAfterHeight = 0;
         vAlertPubKey = ParseHex("04887665070e79d20f722857e58ec8f402733f710135521a0b63441419bf5665ba4623bed13fca0cb2338682ab2a54ad13ce07fbc81c3c2f0912a4eb8521dd3cfb");
 
@@ -310,7 +310,7 @@ public:
         pchMessageStart[1] = 0xbf;
         pchMessageStart[2] = 0xb5;
         pchMessageStart[3] = 0xda;
-        nDefaultPort = 20444;
+        nDefaultPort = 20544;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1388479472, 534404, 0x1e0ffff0, 1, 500 * COIN);
