@@ -302,9 +302,9 @@ public:
         consensus.defaultAssumeValid = uint256S("0x00");
 
         // Hardfork params
-        nSwitchKGWblock = 20;
-        nSwitchDIGIblock = 40;
-        nSwitchLyra2REv2_DGW = 60;
+        nSwitchKGWblock = 0;
+        nSwitchDIGIblock = 1;
+        nSwitchLyra2REv2_DGW = 0;
 
         pchMessageStart[0] = 0xfa;
         pchMessageStart[1] = 0xbf;
@@ -313,9 +313,13 @@ public:
         nDefaultPort = 20544;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1388479472, 534404, 0x1e0ffff0, 1, 500 * COIN);
+        genesis = CreateGenesisBlock(1488924140, 2559236, 0x1e0ffff0, 1, 500 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x039bcb0e9c9540be6dc0e62b9eb6dfa838293a78d16f097b86415e4a932e90ec"));
+		assert(consensus.hashGenesisBlock == uint256S("0x4266cec485430edefb5260465358b44b023fdf5717a523ba07615e4da9f1d80b"));
+		assert(genesis.hashMerkleRoot == uint256S("0x4252922eb53ad8e1f482a49921853cebf5267df37639e644ea88deea06258992"));
+//        genesis = CreateGenesisBlock(1388479472, 534404, 0x1e0ffff0, 1, 500 * COIN);
+//        consensus.hashGenesisBlock = genesis.GetHash();
+//        assert(consensus.hashGenesisBlock == uint256S("0x039bcb0e9c9540be6dc0e62b9eb6dfa838293a78d16f097b86415e4a932e90ec"));
 //        assert(genesis.hashMerkleRoot == uint256S("0x4252922eb53ad8e1f482a49921853cebf5267df37639e644ea88deea06258992"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
